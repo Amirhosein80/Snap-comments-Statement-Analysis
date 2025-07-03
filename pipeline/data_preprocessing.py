@@ -9,12 +9,24 @@ from src.create_labels import DataLabeler
 
 logger = get_logger(__name__)
 
-def parse_args():
+def parse_args() -> argparse.Namespace:
+    """
+    Arguments for runing the code.
+    
+    Example
+    ----------
+    args = parse_args()
+    config_path = args.config
+    
+    Returns
+    -------
+    return args
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=str, default=r"config/config.yaml")
     return parser.parse_args()
 
-def main():
+def main() -> None:
     """
     Preprocessing and Labeling the dataset.
     
