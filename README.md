@@ -11,8 +11,9 @@ This dataset dosn't contain any labels. So in order to create labels for this da
 ## Installation
 You can use install this package by running this command in your terminal. we highly recomend to use an virtual environment.
 
-'''
+```cmd
 pip install -e .
-'''
+```
+
 
 
