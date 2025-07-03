@@ -1,0 +1,34 @@
+datasets:
+  train: "./data/train.csv"
+  test: "./data/test.csv"
+  artifact_dir: "./artifacts"
+  num_classes: 2
+
+
+model_training:
+  train_dataset: "./artifacts/train_labeled.csv"
+  test_dataset: "./artifacts/test_labeled.csv"
+  semi_supervised: True
+  save_path: "./artifacts"
+
+  tfidf:
+    max_features: 380
+    min_df: 0.001
+    max_df: 0.55
+    ngram_max: 2
+
+
+  model:
+    C: 0.005
+    loss: "hinge"
+
+
+inference:
+  model_path: "./artifacts/semi_supervised_pipeline.pkl"
+  tfidf_path: "./artifacts/tfidf.pkl"
+  pipeline_path: "./artifacts/web_pipeline.pkl"
+
+
+web:
+  host: "0.0.0.0"
+  port: 8080
