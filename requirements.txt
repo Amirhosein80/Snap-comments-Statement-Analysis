@@ -1,0 +1,11 @@
+pandas
+numpy 
+parsivar
+tqdm
+snorkel
+scikit-learn
+boruta
+pyyaml
+optuna
+fastapi[standard]
+uvicorn
