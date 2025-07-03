@@ -1,0 +1,9 @@
+venv
+.vscode
+logs
+data
+artifacts/test_labeled.csv
+artifacts/test_processed.csv
+artifacts/train_labeled.csv
+artifacts/train_processed.csv
+artifacts/tuner.db
