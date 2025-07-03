@@ -1,4 +1,4 @@
-# Snapp comments Statement Analysis
+# SnapFood comments Statement Analysis
 
 An ML model to predict whether a statement is a positive or negative statement based on the snapfood comments.
 
