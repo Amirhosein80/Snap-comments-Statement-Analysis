@@ -7,3 +7,5 @@ artifacts/test_processed.csv
 artifacts/train_labeled.csv
 artifacts/train_processed.csv
 artifacts/tuner.db
+notebooks/
+*.egg-info
